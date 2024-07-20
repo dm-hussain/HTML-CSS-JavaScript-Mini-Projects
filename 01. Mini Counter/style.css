@@ -7,8 +7,8 @@
 }
 body{
     background-color: rgb(255, 255, 255);
-    min-height: 100vh;
-    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
     
 }
 
@@ -174,10 +174,7 @@ header a {
         margin: 0;
     }
 
-    /* Hide up/down arrows in Firefox */
-    input[type="number"] {
-        -moz-appearance: textfield;
-    }
+  
 
     /* Hide up/down arrows in Edge and IE */
     input[type="number"] {
