@@ -1,0 +1,302 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+/* header section+++++++++++++++++++++++++++++++++++++ */
+
+header {
+    background-color: #394648;
+    position: sticky;
+    top:0;
+    height: 60px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+header img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5rem;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+header a {
+    font-size: 1.4rem;
+    margin-left: 5rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* main section ++++++++++++++++++++++++++++++++++++++ */
+
+main{
+
+    height: 100vh;
+    background-color: #CBAC88;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    padding: 4rem;
+
+}
+
+
+.container {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    background-color: #394648;
+    margin-bottom: 20rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #e5fa04;
+}
+
+#input-box {
+    border: none;
+    width: 20rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.9rem;
+    border-radius: 1rem;
+    background-color: #EDB6A3;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+}
+
+
+.button-box {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+ 
+}
+
+
+.btn {
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 700;
+    background-color: #F8E9E9;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.5S;
+}
+
+#submit-btn {
+
+    background-color: aqua;
+    color: rgb(43, 4, 4);
+
+}
+
+#new-game {
+
+    background-color: #69995D;
+    color: rgb(255, 255, 255);
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+     
+
+}
+
+#new-game:hover {
+   
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+}
+
+
+/* message box++++++++++ */
+
+.msg-box p {
+
+    text-align: center;
+    color: #EDB6A3;
+    font-size: 1.6rem;
+    margin : 1rem  auto;
+
+}
+
+.hide {
+    display: none;
+}
+
+ .disable-btn {
+
+    pointer-events: none;
+    opacity: 30%;
+ }
+
+
+
+
+
+
+/* footer section+++++++++++++++++++++++++ */
+
+
+
+    
+footer{
+    position: sticky;
+    bottom: 0;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+    background-color: #394648;
+     
+}
+
+footer p {
+    font-weight: 700;
+   color: #ffffff;
+   padding: 1rem;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+
+footer a {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+footer a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    background: #DB2955;
+    transition: width 0.4s;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+
+.social-icon {
+    color: white;
+    margin: 0 2rem;
+    
+
+}
+
+i {
+    font-size: 2rem;
+}
+
+
+
+
+/* Responsive +++++++++++++++++++++++++++++++++++++++ */
+
+@media(max-width: 780px) {
+
+    .container {
+        margin-top: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .container {
+        
+        height: 70vh;
+        width: 90vw;
+}
+.button-box {
+ 
+    flex-direction: column;
+    margin-top: 2rem;
+ 
+}
+
+
+.btn {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+   
+    margin-top: 2.5rem;
+}
+
+
+#input-box {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 8rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background-color: #EDB6A3;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+}
+
+::placeholder {
+    
+    font-size: 1.8rem ;
+    
+}
+
+.msg-box p {
+ 
+    font-size: 1.8rem;
+    margin : 0  auto;
+
+}
+
+
+}
