@@ -23,27 +23,27 @@
 
     <main>
 
-        <div class="container">
+        <form class="container">
 
-            <h1>Enter a guess betwen 0 to 100 </h1>
-            <input type="number" id="input-box" placeholder="Enter a number">
+            <label for="input-box" id="top-msg">Enter a guess betwen 0 to 100 </label>
+            <input type="number" id="input-box" required min="0" max="100" placeholder="Enter a number" autocomplete="off" autofocus class="no-spin">
 
             <div class="msg-box hide">
                 <p id="msg1">  </p>
-                <p id="msg2">Your guesses are: </p>
+                <p id="msg2"> </p>
             </div>
     
             <div class="button-box">
     
                 <button class="btn" id="submit-btn"> Submit </button>
                 
-                <button class="btn disable-btn" id="new-game"> New Game </button>
+                <button class="btn disable-btn" id="new-game"  > New Game </button>
             </div>
     
     
             
 
-        </div>
+        </form>
        
 
     </main>
@@ -62,3 +62,7 @@
     
 </body>
 </html>
+
+
+
+

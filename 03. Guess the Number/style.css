@@ -12,7 +12,7 @@
 /* header section+++++++++++++++++++++++++++++++++++++ */
 
 header {
-    background-color: #394648;
+    background-color: #272727;
     position: sticky;
     top:0;
     height: 60px;
@@ -40,7 +40,7 @@ header a {
     font-size: 1.4rem;
     margin-left: 5rem;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -75,7 +75,7 @@ main{
 
 }
 
-.container h1 {
+.container #top-msg {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #e5fa04;
@@ -95,6 +95,20 @@ main{
 }
 
 
+#input-box:focus {
+    outline: none;
+    border : 2px solid rgb(255, 255, 255)
+}
+
+/* remove up-down aerrow key from input  */
+
+.no-spin::-webkit-outer-spin-button,
+.no-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 .button-box {
     display: flex;
     gap: 2rem;
@@ -105,13 +119,13 @@ main{
 
 .btn {
     font-size: 1.4rem;
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 1rem;
     font-weight: 700;
     background-color: #F8E9E9;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4);
-    transition: 0.5S;
+    /* transition: 0.5S; */
 }
 
 #submit-btn {
@@ -123,9 +137,14 @@ main{
 
 #new-game {
 
-    background-color: #69995D;
+    background-color: #bb6400;
     color: rgb(255, 255, 255);
 
+}
+
+#new-game:focus {
+    outline: none;
+    border : 2px solid rgb(255, 255, 255)
 }
 
 .btn:hover {
@@ -151,6 +170,14 @@ main{
 
 /* message box++++++++++ */
 
+
+.msg-box {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 2rem;
+    /* background-color: #131313; */
+}
+
 .msg-box p {
 
     text-align: center;
@@ -160,33 +187,32 @@ main{
 
 }
 
+#msg1{
+    color: yellow;
+}
+
 .hide {
-    display: none;
+    opacity: 0;
 }
 
  .disable-btn {
-
-    pointer-events: none;
-    opacity: 30%;
+    display: none;
+    background-color:#394648 !important;
+    color: #394648 !important;
+    box-shadow: none; 
+    
  }
-
-
-
-
-
 
 /* footer section+++++++++++++++++++++++++ */
 
-
-
-    
+  
 footer{
     position: sticky;
     bottom: 0;
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-    background-color: #394648;
+    background-color: #272727;
      
 }
 
@@ -235,6 +261,12 @@ i {
     font-size: 2rem;
 }
 
+::placeholder {
+    
+    font-size: 1.8rem ;
+    
+}
+
 
 
 
@@ -243,7 +275,10 @@ i {
 @media(max-width: 780px) {
 
     .container {
-        margin-top: 2rem;
+        max-height: 45vh;
+        /* width: 10vw; */
+        margin-bottom: 55vh;
+        margin-top: 5rem;
     }
 
     header h1 {
@@ -257,6 +292,7 @@ i {
         height: 70vh;
         width: 90vw;
 }
+
 .button-box {
  
     flex-direction: column;
@@ -267,7 +303,7 @@ i {
 
 .btn {
     font-size: 1.6rem;
-    padding: 1rem 1.5rem;
+    padding: 2rem 4.5rem;
    
     margin-top: 2.5rem;
 }
@@ -287,7 +323,7 @@ i {
 
 ::placeholder {
     
-    font-size: 1.8rem ;
+    font-size: 2rem ;
     
 }
 
